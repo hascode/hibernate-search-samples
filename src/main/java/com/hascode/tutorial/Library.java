@@ -55,7 +55,7 @@ public class Library {
 		List<Book> result = fullTextQuery.getResultList();
 		printResults(result);
 
-		// oldschool JPA search
+		// JPA search
 		Query query = em
 				.createQuery("SELECT b FROM Book b WHERE b.author=:author");
 		query.setParameter("author", "fred");

@@ -6,7 +6,6 @@ import javax.persistence.Id;
 import javax.persistence.Lob;
 
 import org.hibernate.search.annotations.Analyze;
-import org.hibernate.search.annotations.DocumentId;
 import org.hibernate.search.annotations.Field;
 import org.hibernate.search.annotations.Indexed;
 import org.hibernate.search.annotations.Store;
@@ -21,7 +20,6 @@ public class Book {
 
 	@Id
 	@GeneratedValue
-	@DocumentId
 	public Long getId() {
 		return id;
 	}
